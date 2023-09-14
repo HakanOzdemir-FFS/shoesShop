@@ -1,0 +1,46 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    background-color: $color-primary-dark-2;
+    height: auto;
+    padding: 1.5rem 4rem;
+    font-weight: 800;
+    font-family: $default-font-style;
+    text-decoration: none;
+    font-size: 2rem;
+    color: $color-white;
+    display: inline-block;
+    box-shadow: $box-shadow-small;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    color: $color-gray-light-3;
+  }
+  &--whislist {
+    margin: 0.7rem 0;
+  }
+  &--member {
+    position: relative;
+    text-transform: uppercase;
+    align-items: center;
+
+    span{
+      display: block;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+
+    &::after {
+      content: "";
+      @include absCenter;
+      top: 55%;
+      left: 51%;
+      height: 100%;
+      width: 100%;
+      border: 1px solid $color-black;
+    }
+  }
+}

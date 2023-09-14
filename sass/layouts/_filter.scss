@@ -1,0 +1,28 @@
+.filter {
+  @include dispCenter;
+  width: 28.5rem;
+  height: 5rem;
+  @include respond(tab-port) {
+    float: right;
+  }
+
+  &__input {
+    width: 90%;
+    height: 50%;
+    border-radius: 10rem;
+    padding: 1rem 2rem;
+    border: 1px solid $color-primary-dark-2;
+    font-family: $default-font-style;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  &--text {
+    align-self: center;
+    font-family: $default-font-style;
+    font-size: 2rem;
+    white-space: nowrap;
+    margin-right: 2rem;
+    color: $color-primary-dark-2;
+  }
+}

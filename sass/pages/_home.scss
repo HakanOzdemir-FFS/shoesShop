@@ -1,0 +1,26 @@
+.store-section {
+  padding: 10rem 0;
+  background-color: $color-primary-light-2;
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
+}
+
+.bg-video-section {
+  padding: 35rem 0;
+  position: relative;
+  overflow: hidden;
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+main {
+  overflow: hidden;
+}
+
+.filter-section {
+  padding-top: 5rem;
+  background-color: $color-primary-light-2;
+}

@@ -1,0 +1,144 @@
+.basket-section {
+  padding: 10rem 0;
+  background-color: $color-primary-light-2;
+
+  .row {
+    @include respond(tab-land) {
+      margin: 0 auto;
+    }
+    @include respond(tab-port) {
+      [class^="col-"] {
+        width: 70% !important;
+        margin: 0 auto;
+      }
+    }
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .col-2-of-4 {
+      order: 1;
+    }
+  }
+
+  &__container {
+    display: flex;
+    border: 1px solid $color-black;
+
+    &__item {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2.8rem;
+      padding-right: 2rem;
+      color: $color-black;
+
+      a {
+        color: black;
+      }
+
+      &--heart {
+        margin-top: 2rem;
+        transition: all 0.2s;
+
+        &:active {
+          transform: scale(1.2);
+          color: red;
+        }
+      }
+    }
+
+    &--img-1 {
+      height: 25rem;
+    }
+
+    &__description {
+      width: 100%;
+      font-family: $default-font-style;
+      font-size: 1.6rem;
+      font-weight: 300;
+      padding: 3rem 3rem 1rem 3rem;
+
+      &--title-and-price {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      select {
+        margin-top: 10rem;
+        width: 6rem;
+        height: 4rem;
+        font-weight: 800;
+        font-size: $default-font-size;
+
+        option {
+          font-weight: 800;
+          font-size: $default-font-size;
+        }
+      }
+    }
+  }
+
+  &__cart-page {
+    border: 1px solid black;
+    width: 35rem;
+    font-family: $default-font-style;
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    &--button {
+      justify-content: space-around;
+      display: flex;
+      width: 27rem;
+      margin-bottom: 2.6rem;
+      @include respond(tab-port) {
+        width: 89%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    h4 {
+      margin-top: 2rem;
+      padding: 0 2rem;
+      font-size:  1.6rem;
+  
+    }
+
+    &__summary {
+      padding: 0 2rem;
+      font-size: 1.6rem;
+      font-weight: 300;
+
+      &--price {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+      }
+
+      &--delivery {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+      }
+
+      &--total {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.basket-banner {
+  padding-top: 10rem;
+  background-color: $color-primary-light-2;
+}

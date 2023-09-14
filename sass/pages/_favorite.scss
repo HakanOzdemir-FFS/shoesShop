@@ -1,0 +1,105 @@
+.favorite-section {
+  padding: 10rem 5rem;
+  background-color: $color-primary-light-2;
+
+  @include respond(phone) {
+    .row {
+      display: flex;
+      flex-direction: column;
+
+      .col-2-of-4 {
+        order: -1;
+      }
+      h3 {
+        order: -1;
+      }
+      h6 {
+        order: -1;
+      }
+    }
+  }
+}
+
+h3 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-family: $default-font-style;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+h6 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-family: $default-font-style;
+  text-transform: uppercase;
+  color: $color-black;
+  font-weight: 300;
+}
+
+.fav-text-container {
+  width: 100%;
+  height: 20rem;
+  background-color: $color-primary-gold;
+  @include dispCenter;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+
+
+  &--text {
+    color: $color-black;
+    font-family: $default-font-style;
+    margin-right: 2rem;
+    font-size: 3.5rem;
+    text-shadow: $box-shadow-small;
+
+    &-2 {
+      font-weight: 300;
+    }
+  }
+}
+
+.wishlist-container {
+  background-color: $color-gray-dark-2;
+  color: $color-white;
+  width: 50%;
+  height: auto;
+  padding: 3rem;
+  font-family: $default-font-style;
+  border-radius: 3px;
+  box-shadow: $box-shadow-medium;
+  margin-bottom: 3rem;
+
+  @include respond(tab-port) {
+    width: 199%;
+    float: right;
+  }
+  @include respond(phone) {
+    width: 90%;
+  }
+
+  &__text {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  &__login {
+    display: block;
+    color: $color-white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 1rem;
+  }
+}
+
+h4 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.favorite-banner {
+  padding-bottom: 10rem;
+  background-color: $color-primary-light-2;
+}

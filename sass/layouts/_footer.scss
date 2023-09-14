@@ -1,0 +1,75 @@
+.footer {
+  width: 100%;
+  background-image: linear-gradient(to bottom, gray, $color-gray-dark-1);
+  text-align: center;
+  font-family: $default-font-style;
+  text-transform: capitalize;
+  padding: 5rem 0 0;
+  text-shadow: $box-shadow-small;
+
+  &__top {
+    padding: 2rem;
+
+    ul {
+      list-style: none;
+      font-size: 1.6rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-white;
+      @include respond(phone) {
+        display: none;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    height: 10rem;
+    @include dispCenter;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    &--bottom {
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+    }
+
+    &--top {
+      ul {
+        list-style: none;
+        display: flex;
+
+        li {
+          margin-left: 3rem;
+          position: relative;
+
+          &:not(:last-child)::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 10.2rem;
+            width: 2px;
+            height: 1.5rem;
+            border-radius: 1rem;
+            background-color: $color-gray-dark-3;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 1.3rem;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

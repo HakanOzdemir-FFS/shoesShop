@@ -1,0 +1,27 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+@keyframes cartBasketMove {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-1rem);
+  }
+  55% {
+    color: $color-black;
+  }
+
+  80% {
+    color: $color-primary-gold;
+  }
+
+  81%{
+    color: $color-black;
+  }
+
+  100% {
+    transform: translateX(20rem);
+  }
+}

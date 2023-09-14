@@ -1,0 +1,174 @@
+.header {
+  display: flex;
+  padding: 2rem 0 1rem 0;
+  background-color: $color-primary-light-1;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-primary-light-1;
+  border-radius: 3px;
+  height: 5rem;
+
+  &__logo-box {
+    padding-left: 2rem;
+  }
+
+  &__logo {
+    width: 20rem;
+    @include respond(tab-port) {
+      width: 40rem;
+    }
+    @include respond(phone) {
+      width: 25rem;
+    }
+  }
+
+  &__nav {
+    margin: 0 4rem;
+    display: flex;
+
+    @include respond(tab-land) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: $color-primary-light-2;
+    border-radius: 3rem;
+    height: auto;
+    width: 50%;
+
+    &__icon {
+      position: absolute;
+      right: 1rem;
+      color: $color-black;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      background-color: transparent;
+      border: 0;
+      padding: 1.5rem 2.5rem;
+
+      &::placeholder {
+        color: $color-black;
+      }
+
+      &:focus {
+        border-radius: 5rem;
+      }
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+  }
+
+  &__user-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+
+    @include respond(tab-land) {
+      margin-left: 2rem;
+    }
+
+    &__icon {
+      color: $color-black;
+      position: relative;
+
+      &--notification-count {
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 50%;
+        background-color: $color-primary-gold;
+        position: absolute;
+        top: -2rem;
+        right: -1.2rem;
+        font-size: 1.2rem;
+        @include dispCenter;
+        font-family: $default-font-style;
+        font-weight: 800;
+      }
+    }
+
+    a {
+      &:not(:first-child) {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  &__right-section {
+    padding-right: 2rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: $color-black;
+  }
+}
+
+.nav__menu {
+  text-decoration: none;
+  color: $color-black;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: $default-font-style;
+  padding-bottom: 2rem;
+
+  &:not(:first-child) {
+    margin-left: 2rem;
+
+    @include respond(tab-land) {
+      margin-left: 1rem;
+    }
+  }
+
+  &2 {
+    font-weight: 300;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &:not(:first-child) {
+    margin-left: 2rem;
+  }
+
+  &:hover &-content {
+    display: block;
+  }
+
+  &-content {
+    display: none;
+    position: absolute;
+    background-color: $color-primary;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    bottom: -24.3rem;
+    left: -50%;
+    font-family: $default-font-style;
+
+    a {
+      color: $color-primary-light-2;
+      padding: 1.2rem 1.6rem;
+      text-decoration: none;
+      display: block;
+
+      &:hover {
+        background-color: $color-primary-light-1;
+        text-decoration: underline;
+      }
+    }
+  }
+}

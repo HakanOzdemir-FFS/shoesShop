@@ -1,0 +1,39 @@
+//COLOR
+$color-primary: #9a8c98;
+$color-primary-light-1: #c9ada7;
+$color-primary-light-2: #f2e9e4;
+$color-primary-dark-1: #4a4e69;
+$color-primary-dark-2: #22223b;
+
+$color-primary-gold: #ede734;
+
+$color-gray-light-1: #f7f7f7;
+$color-gray-light-2: #eee;
+$color-gray-light-3: #767677;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-gray-dark-1: #777;
+$color-gray-dark-2: #999;
+$color-gray-dark-3: #333;
+
+//FONT
+$default-font-size: 1.6rem;
+$default-font-style: Roboto;
+
+//GRID
+$gutter-vertical: 5rem;
+$gutter-vertical-small:3rem;
+$grid-width: 120rem;
+$gutter-horizantal: 2rem;
+
+//SHADOW
+$box-shadow-small: 0 1rem 2rem rgba($color-black, 0.2);
+$box-shadow-medium: 0 1.5rem 4rem rgba($color-black, 0.4);
+$box-shadow-big: 0 4rem 8rem rgba($color-black, 0.6);
+
+//TRANSITION DELAY
+$transition-delay-small: all 0.3s;
+$transition-delay-medium: all 0.6s;
+$transition-delay-big: all 0.8s;
