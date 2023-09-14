@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoes Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e1698cffb6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script/main.js" defer></script>
+    <script src="script/clickAnimated.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="hamburger_menu__container">
+        <input
+          class="hamburger_menu__container__checkbox"
+          type="checkbox"
+          name="hamburger"
+          id="hamburger"
+        />
+        <label class="hamburger_menu__container__label" for="hamburger"
+          >&nbsp;
+          <span class="hamburger_menu__container__label--icon"></span>
+        </label>
+        <div class="hamburger_menu__container__background"></div>
+        <div class="hamburger_menu">
+          <div class="hamburger_menu__head">
+            <div>&nbsp;</div>
+
+            <a href="index.html"
+              ><img
+                src="sourse/img/logo.svg"
+                alt="Logo"
+                class="hamburger_menu__head__logo-box--logo"
+            /></a>
+            <label for="hamburger">
+              <i class="hamburger_menu--close fa-solid fa-xmark fa-sm"></i>
+            </label>
+          </div>
+
+          <nav class="hamburger_menu__nav">
+            <ul>
+              <li>
+                <a
+                  class="hamburger_menu__nav--item hamburger_menu__nav--item-1"
+                  href="#"
+                  >End off season sale</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hamburger_menu__nav--item hamburger_menu__nav--item-2"
+                  href="#"
+                  >men <span>&rsaquo;</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="hamburger_menu__nav--item hamburger_menu__nav--item-2"
+                  href="#"
+                  >Woman
+                  <span>&rsaquo;</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hamburger_menu__nav--item hamburger_menu__nav--item-2"
+                  href="#"
+                  >Kids
+                  <span>&rsaquo;</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hamburger_menu__nav--item hamburger_menu__nav--item-3"
+                  href="#"
+                  >Sport
+                  <span>&rsaquo;</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hamburger_menu__nav--item hamburger_menu__nav--item-3"
+                  href="#"
+                  >brands
+                  <span>&rsaquo;</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hamburger_menu__nav--item hamburger_menu__nav--item-3"
+                  href="#"
+                  >lifestyle
+                  <span>&rsaquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__logo-box">
+        <a href="index.html"
+          ><img src="sourse/img/logo.svg" alt="Logo" class="header__logo"
+        /></a>
+      </div>
+      <nav class="header__nav">
+        <div class="dropdown">
+          <a class="nav__menu nav__menu1" href="#">men</a>
+          <div class="dropdown-content">
+            <a href="#">Running</a>
+            <a href="#">Originals</a>
+            <a href="#">Basketball</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Training</a>
+            <a href="#">Sandals</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="nav__menu nav__menu1" href="#">Woman</a>
+          <div class="dropdown-content">
+            <a href="#">Running</a>
+            <a href="#">Originals</a>
+            <a href="#">Basketball</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Training</a>
+            <a href="#">Sandals</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="nav__menu nav__menu1" href="#">Kids</a>
+          <div class="dropdown-content">
+            <a href="#">Running</a>
+            <a href="#">Originals</a>
+            <a href="#">Basketball</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Training</a>
+            <a href="#">Sandals</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="nav__menu nav__menu2" href="#">Sport</a>
+          <div class="dropdown-content">
+            <a href="#">Running</a>
+            <a href="#">Originals</a>
+            <a href="#">Basketball</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Training</a>
+            <a href="#">Sandals</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="nav__menu nav__menu2" href="#">brands</a>
+          <div class="dropdown-content">
+            <a href="#">Running</a>
+            <a href="#">Originals</a>
+            <a href="#">Basketball</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Training</a>
+            <a href="#">Sandals</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="nav__menu nav__menu2" href="#">lifestyle</a>
+          <div class="dropdown-content">
+            <a href="#">Running</a>
+            <a href="#">Originals</a>
+            <a href="#">Basketball</a>
+            <a href="#">Outdoor</a>
+            <a href="#">Training</a>
+            <a href="#">Sandals</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header__right-section">
+        <div class="header__input-box">
+          <input
+            class="header__input-box__input"
+            type="text"
+            placeholder="Search"
+            name="search"
+          />
+          <a href="#"
+            ><i
+              class="header__input-box__icon fa-solid fa-magnifying-glass fa-2xl"
+            ></i
+          ></a>
+        </div>
+        <div class="header__user-box">
+          <a href="logIn.html"
+            ><i class="header__user-box__icon fa-regular fa-user fa-2xl"> </i
+          ></a>
+          <a href="favorite.html">
+            <i class="header__user-box__icon fa-regular fa-heart fa-2xl">
+              <span
+                id="header-fav-count"
+                class="header__user-box__icon--notification-count invisible"
+              >
+              </span>
+            </i>
+          </a>
+          <a href="basket.html">
+            <i
+              class="header__user-box__icon fa-solid fa-basket-shopping fa-2xl"
+            >
+              <span
+                id="header-cart-count"
+                class="header__user-box__icon--notification-count invisible"
+              >
+              </span>
+            </i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="basket-banner">
+      <div class="fav-text-container">
+        <span class="fav-text-container--text"
+          >BECOME A MEMBER & GET 15% OFF <br>
+          <span class="fav-text-container--text-2">FREE DELIVERY ON ORDERS OVER &dollar;50</span>
+          </span
+        >
+        <a class="btn btn--member" href="logIn.html"
+          >sıgn up for free
+          <i class="fa-solid fa-arrow-right u-margin-left-small"></i>
+        </a>
+      </div>
+    </div>
+
+    <template id="basket-item-template">
+      <div class="basket-section__container">
+        <div class="basket-section__container--img">
+          <img
+            id="basket-section-img"
+            class="basket-section__container--img-1"
+            src="sourse/img/shoes1/shoes1.jpg"
+            alt="img1"
+          />
+        </div>
+        <div class="basket-section__container__description">
+          <div class="basket-section__container__description--title-and-price">
+            <span id="basket-section-title">LITE RACER REBOLD SHOES</span>
+            <span id="basket-section-price">1.629,00 TL</span>
+          </div>
+          <div class="">
+            <span id="basket-section-color">Color: Borwn</span>
+            <span>&nbsp;</span>
+          </div>
+          <div>
+            <span id="basket-section-size">Size : 40</span>
+          </div>
+
+          <select id="basket-section-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+
+        <div class="basket-section__container__item">
+          <a href="#"
+            ><i
+              id="basket-section-remove"
+              class="basket-section__container__item--x fa-solid fa-xmark"
+            ></i
+          ></a>
+        </div></div
+    ></template>
+
+    <template id="order-template">
+      <a class="btn btn--member basket-section__cart-page--button" href="#"
+        ><span>PAYMENT</span>
+        <i class="fa-solid fa-arrow-right u-margin-left-small"></i>
+      </a>
+      <div class="basket-section__cart-page">
+        <h4 class="u-margin-bottom-small">Order summary</h4>
+        <div class="basket-section__cart-page__summary">
+          <div class="basket-section__cart-page__summary--price">
+            <span id="basket-item-value">1 item</span>
+            <span id="basket-section-payment-value">1.629,00 TL</span>
+          </div>
+          <div class="basket-section__cart-page__summary--delivery">
+            <span>Delivery</span>
+            <span id="basket-section-delivery">Free</span>
+          </div>
+          <div class="basket-section__cart-page__summary--total">
+            <span>Total</span>
+            <span id="basket-section-total-payment-value">1.629,00 TL</span>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <div id="shopping-app"></div>
+
+    <!-- <section class="basket-section">
+      <div class="row">
+        <div class="col-2-of-3"></div>
+        <div class="basket-section__container">
+          <div class="basket-section__container--img">
+            <img
+              class="basket-section__container--img-1"
+              src="sourse/img/shoes1/shoes1.jpg"
+              alt="img1"
+            />
+          </div>
+          <div class="basket-section__container__description">
+            <div
+              class="basket-section__container__description--title-and-price"
+            >
+              <span>LITE RACER REBOLD SHOES</span>
+              <span>1.629,00 TL</span>
+            </div>
+            <div class="">
+              <span>Color: Borwn</span>
+              <span>&nbsp;</span>
+            </div>
+            <div>
+              <span>Size : 40</span>
+            </div>
+
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="basket-section__container__item">
+            <a href="#"
+              ><i
+                class="basket-section__container__item--x fa-solid fa-xmark"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="basket-section__container__item--heart fa-regular fa-heart"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <a class="btn btn--member basket-section__cart-page--button" href="#"
+            ><span>PAYMENT</span>
+            <i class="fa-solid fa-arrow-right u-margin-left-small"></i>
+          </a>
+          <div class="basket-section__cart-page">
+            <h4 class="u-margin-bottom-small">Order summary</h4>
+            <div class="basket-section__cart-page__summary">
+              <div class="basket-section__cart-page__summary--price">
+                <span>1 item</span>
+                <span>1.629,00 TL</span>
+              </div>
+              <div class="basket-section__cart-page__summary--delivery">
+                <span>Delivery</span>
+                <span>Free</span>
+              </div>
+              <div class="basket-section__cart-page__summary--total">
+                <span>Total</span>
+                <span>1.629,00 TL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2-of-3">
+          <div class="basket-section__container">
+            <div class="basket-section__container--img">
+              <img
+                class="basket-section__container--img-1"
+                src="sourse/img/shoes1/shoes1.jpg"
+                alt="img1"
+              />
+            </div>
+            <div class="basket-section__container__description">
+              <div
+                class="basket-section__container__description--title-and-price"
+              >
+                <span>LITE RACER REBOLD SHOES</span>
+                <span>1.629,00 TL</span>
+              </div>
+              <div class="">
+                <span>Color Borwn</span>
+                <span>&nbsp;</span>
+              </div>
+              <div>
+                <span>Size : 40</span>
+              </div>
+
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+
+            <div class="basket-section__container__item">
+              <a href="#"
+                ><i
+                  class="basket-section__container__item--x fa-solid fa-xmark"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="basket-section__container__item--heart fa-regular fa-heart"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="row">
+          <div class="col-1-of-4">
+            <h4 class="u-margin-bottom-small">Products</h4>
+            <ul>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Best Sellers</a></li>
+              <li><a href="#">Outlet</a></li>
+            </ul>
+          </div>
+          <div class="col-1-of-4">
+            <h4 class="u-margin-bottom-small">Collections</h4>
+            <ul>
+              <li><a href="#">Training</a></li>
+              <li><a href="#">Football</a></li>
+              <li><a href="#">Running</a></li>
+              <li><a href="#">Basketball</a></li>
+              <li><a href="#">Swimming</a></li>
+              <li><a href="#">Tennis</a></li>
+            </ul>
+          </div>
+          <div class="col-1-of-4">
+            <h4 class="u-margin-bottom-small">Company info</h4>
+            <ul>
+              <li><a href="#">ourClub</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+          <div class="col-1-of-4">
+            <h4 class="u-margin-bottom-small">Support</h4>
+            <ul>
+              <li><a href="#">Help & Customer service</a></li>
+              <li><a href="#">Store Locator</a></li>
+              <li><a href="#">Size charts</a></li>
+              <li><a href="#">Payment</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Return & Refunds</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer__bottom">
+        <div class="footer__bottom--top">
+          <ul>
+            <li><a href="#">Cookie settings</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer__bottom--bottom">
+          <i class="fa-regular fa-copyright fa-lg"></i>
+          2023 Hakan Ozdemir
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
